@@ -24,7 +24,7 @@ jobs:
 
       - name: Build Windows EXE
         run: |
-          pyinstaller --onefile app.py
+          pyinstaller --onefile GBIFSearch.py
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
@@ -50,7 +50,7 @@ jobs:
 
       - name: Build macOS executable
         run: |
-          pyinstaller --onefile app.py
+          pyinstaller --onefile GBIFSearch.py
 
       - name: Upload macOS artifact
         uses: actions/upload-artifact@v4
