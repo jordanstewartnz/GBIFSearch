@@ -53,7 +53,7 @@ jobs:
           pyinstaller --onefile app.py
 
       - name: Upload macOS artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: gbif-app-macos
           path: dist/app
